@@ -14,22 +14,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>php demo</title>
+		<title>born eval</title>
 		<link rel="stylesheet" href="app/scripts/style.css"/>
 	</head>
 	<body>
 		<div class="main_div">
 			<fieldset>
-				<legend>Point Of Sale Scanner</legend>
+				<legend>Price Check Scanner Test</legend>
 				<div class="tooltip_main">
 					<div class="help">
-						Question info
 						<div class="tooltip">
 							<p>
-								<p>Consider a store where items have prices per unit but also volume prices. For example, apples may be $1.00 each or 4 for $3.00.</p>
-								<p>Implement a point-of-sale scanning API that accepts an arbitrary ordering of products (similar to what would happen at a checkout line)</p>
-								<p>and then returns the correct total price for an entire shopping cart based on the per unit prices or the volume prices as applicable.</p>
-								<p>Here are the products listed by code and the prices to use (there is no sales tax):</p>
 								<p>Product Code | Price</p>
 								<p>--------------------</p>
 								<p>A | $2.00 each or 4 for $7.00</p>
@@ -56,10 +51,10 @@
 						<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="target">
 							<div class="scanner_input">
 								<label>Scan items: </label>
-								<input type="text" name="product_txt" />
+								<input type="text" name="product_txt" value="ABCDABAA"/>
 								<button type="submit" name="submit" id="process">Submit</button>
 							</div>
-							<span>For example: ABCDABAA or CCCCCCC or ABCD</span>
+							<span>EXAMPLES: CCCCCCC ABCDABAA or ABCD</span>
 						</form>
 					</div>
 					<div class="result">
