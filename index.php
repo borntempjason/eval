@@ -1,12 +1,6 @@
 <?php
 /**
- * Point Of Sale Scanner
- *
- * @package     Pricecheck
- * @copyright   biswal@jyotiranjan.in
- * @author      Jyotiranjan Biswal <biswal@jyotiranjan.in>
- *
- * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * Price Check for Born
  */
 
  require_once 'config.php';

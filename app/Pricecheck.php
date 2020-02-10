@@ -22,9 +22,7 @@ include_once "lib/Autoload.php";
 Pc_Autoload::register();
 
 /**
- * Main Pricecheck hub class
- *
- * @author      Jyotiranjan Biswal <biswal@jyotiranjan.in>
+ *Main Pricecheck Src
  */
 final class Pricecheck
 {
@@ -112,7 +110,7 @@ final class Pricecheck
         }
 
         if ('' === $appRoot) {
-            // automagically find application root by dirname of Pricecheck.php
+
             $appRoot = dirname(__FILE__);
         }
 
