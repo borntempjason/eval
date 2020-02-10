@@ -9,6 +9,7 @@
 <html>
 	<head>
 		<title>born eval</title>
+
 		<link rel="stylesheet" href="app/scripts/style.css"/>
 	</head>
 	<body>
@@ -45,18 +46,25 @@
 						<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="target">
 							<div class="scanner_input">
 								<label>Scan items: </label>
-								<input type="text" name="product_txt" value="ABCDABAA"/>
+								<input type="text" name="product_txt"/>
 								<button type="submit" name="submit" id="process">Submit</button>
 							</div>
 							<span>EXAMPLES: CCCCCCC ABCDABAA or ABCD</span>
+
 						</form>
 					</div>
 					<div class="result">
 						<?php $scanner = new Scanner(); ?>
 						<?php $scanner->startProcess(); ?>
 					</div>
+
+
 				</div>
 			</fieldset>
+            <div><p>Scan these items in this order: ABCDABAA; Verify the total price is $32.40.</p>
+                <p>Scan these items in this order: CCCCCCC; Verify the total price is $7.25.</p>
+                <p>Scan these items in this order: ABCD; Verify the total price is $15.40.</p></div>
 		</div>
 	</body>
 </html>
+
